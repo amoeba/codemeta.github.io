@@ -3,11 +3,12 @@ title: Codemeta Terms
 
 ---
 
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
 
 
 <div id="terms-from-schema.org" class="section level2">
 <h2>Terms from Schema.org</h2>
-<p>Recognized properties for CodeMeta <code>Code</code> includes the following terms from <a href="https://schema.org" class="uri">https://schema.org</a>. These terms are part of the CodeMeta specification and can be used without any prefix.</p>
+<p>Recognized properties for CodeMeta <code>SoftwareSourceCode</code> and <code>SoftwareApplication</code> includes the following terms from <a href="https://schema.org" class="uri">https://schema.org</a>. These terms are part of the CodeMeta specification and can be used without any prefix.</p>
 <table class="table table-striped">
 <thead>
 <tr>
@@ -31,7 +32,7 @@ codeRepository
 URL
 </td>
 <td style="text-align:left;">
-Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex, institutional GitLab instance, etc.).
+Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex).
 </td>
 </tr>
 <tr>
@@ -75,7 +76,7 @@ applicationCategory
 Text or URL
 </td>
 <td style="text-align:left;">
-Type of software application, e.g. ‘Game, Multimedia’.
+Type of software application, e.g. ‘Game, Multimedia’.
 </td>
 </tr>
 <tr>
@@ -86,7 +87,7 @@ applicationSubCategory
 Text or URL
 </td>
 <td style="text-align:left;">
-Subcategory of the application, e.g. ‘Arcade Game’.
+Subcategory of the application, e.g. ‘Arcade Game’.
 </td>
 </tr>
 <tr>
@@ -289,21 +290,10 @@ The year during which the claimed copyright for the CreativeWork was first asser
 </tr>
 <tr>
 <td style="text-align:left;">
-creator
-</td>
-<td style="text-align:left;">
-Organization or Person
-</td>
-<td style="text-align:left;">
-The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
 dateCreated
 </td>
 <td style="text-align:left;">
-Date
+Date or DateTime
 </td>
 <td style="text-align:left;">
 The date on which the CreativeWork was created or the item was added to a DataFeed.
@@ -314,7 +304,7 @@ The date on which the CreativeWork was created or the item was added to a DataFe
 dateModified
 </td>
 <td style="text-align:left;">
-Date
+Date or DateTime
 </td>
 <td style="text-align:left;">
 The date on which the CreativeWork was most recently modified or when the item’s entry was modified within a DataFeed.
@@ -564,7 +554,7 @@ A link related to this object, e.g. related web pages
 </tr>
 </tbody>
 </table>
-<p>These terms are all recognized properties of <a href="https://schema.org/SoftwareSourceCode" class="uri">https://schema.org/SoftwareSourceCode</a> or <a href="https://schema.org/SoftwareApplication" class="uri">https://schema.org/SoftwareApplication</a> Types. Note that while most properties take basic data types as values (<code>Text</code>, <code>URL</code>), several take other node types, such as <code>Person</code> or <code>Organization</code>. Recommended fields for these node types in CodeMeta documents are given below:</p>
+<p>These terms are all recognized properties of <a href="https://schema.org/SoftwareSourceCode" class="uri">https://schema.org/SoftwareSourceCode</a> or <a href="https://schema.org/SoftwareApplication" class="uri">https://schema.org/SoftwareApplication</a> Types. Note that while most properties take basic data types as values (<code>Text</code>, <code>URL</code>), several take other node types, such as <code>Person</code> or <code>Organization</code>. Recommended fields for these node types in CodeMeta documents are given below.</p>
 <table class="table table-striped">
 <thead>
 <tr>
@@ -684,7 +674,7 @@ Email address
 affiliation
 </td>
 <td style="text-align:left;">
-Organization
+Text
 </td>
 <td style="text-align:left;">
 An organization that this person is affiliated with. For example, a school/university
@@ -698,7 +688,7 @@ identifier
 URL
 </td>
 <td style="text-align:left;">
-URL identifier, ideally an ORCID ID for individuals, a FundRef ID for funders
+URL identifer, ideally an ORCID ID for individuals, a FundRef ID for funders
 </td>
 </tr>
 <tr>
@@ -752,7 +742,7 @@ softwareSuggestions
 SoftwareSourceCode
 </td>
 <td style="text-align:left;">
-Optional dependencies , e.g. for optional features, code development, etc.
+Optional dependencies , e.g. for optional features, code development, etc
 </td>
 </tr>
 <tr>
@@ -796,7 +786,7 @@ developmentStatus
 Text
 </td>
 <td style="text-align:left;">
-Description of development status, e.g. Active, inactive, suspended. See <a href="http://www.repostatus.org/">repostatus.org</a>
+Description of development status, e.g. Active, inactive, supsended. See repostatus.org
 </td>
 </tr>
 <tr>
